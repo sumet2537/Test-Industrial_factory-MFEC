@@ -13,7 +13,8 @@ public class Industrial_factory {
         Time timeOut = new Time(17, 0, 0);
         Time OttimeOut = new Time(17, 30, 0);
         double rateOt = (290.00 / 8.00) * 1.5; //290 เงินต่อวัน 8 hr / 8 คือ ชั่วโมงทำงาน/วัน 1.5 คือ ค่า ot ปกติ
-        try (BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("/Users/brass/Documents/Industrial_factory/src/industrial_factory/working_time.txt"), "TIS-620"))) {
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream("/Users/brass/Documents/Industrial_factory/src/industrial_factory/working_time.log
+        "), "TIS-620"))) {
             String line;
             int o = 0;
             while ((line = in.readLine()) != null) {
